@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <input type="text" placeholder="Search..">
+  </div>
+<head>
+  <meta charset="utf-8" />
+  <title>News Mapper</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+  <!-- Axios JS file -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- Mapbox JS files -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+
+  <!-- Mapox and directory CSS files -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  
+</head>
+<body>
+  <div class="container">
+      <!-- Map pane -->
+      <div class="map" id="map">
+      </div>
+      
+      <!-- Stories pane -->
+      <div class="stories" id="stories">
+      </div>
+  </div>
+
+  <!-- Wait till the layout loads and then run the directory JS file -->
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
